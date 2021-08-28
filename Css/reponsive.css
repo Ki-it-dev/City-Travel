@@ -1,0 +1,248 @@
+.header__bars-btn {
+    position: relative;
+    color: #000;
+    font-size: 2.8rem;
+    display: none;
+}
+
+.header-menu-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9;
+}
+
+.header__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .3);
+    z-index: 10;
+    display: none;
+    animation: fadeIn linear .2s;
+}
+
+.header-menu-mobile {
+    min-width: 320px;
+    transform: translateX(100%);
+    z-index: 10;
+    transition: all linear .2s;
+    opacity: 0;
+}
+
+.header-close-mobile {
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 2.4rem;
+}
+
+.header-menu__list-mobile {
+    background: rgb(243, 164, 107);
+    box-shadow: 1px 2px 0 #999;
+    list-style-type: none;
+    padding-left: 0;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    padding: 20px;
+}
+
+.header-menu__list-items-mobile {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.header-menu__list-items-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-menu-mobile .btnBookNow {
+    text-transform: uppercase;
+    padding: 16px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: coral;
+}
+
+.fa-mobile-icons {
+    margin-right: 8px;
+}
+
+.nav-input:checked~.header__overlay {
+    display: block;
+}
+
+.nav-input:checked~.header-menu-mobile {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.reponsiveMargin-1{
+    margin-left: -36px;
+}
+
+.reponsiveMargin-2{
+    margin-left: 24px;
+}
+
+@media (max-width:1024px) {
+    .header {
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        background: #fff;
+        box-shadow: 0px 1px 2px #999;
+    }
+    .header__bars-btn {
+        display: block;
+    }
+    .header-menu {
+        display: none;
+    }
+    .header-menu-mobile {
+        display: block;
+    }
+    .priceDetails .reponsiveMargin-1 {
+        margin-left: -16px;
+    }
+    .priceDetails .reponsiveMargin-2 {
+        margin-left: 8px;
+    }
+    .footer .listsContent {
+        margin-top: 20px;
+    }
+    .footer h3 {
+        font-size: 2rem;
+    }
+    .reponsiveFooter {
+        width: 100%;
+        margin-top: 24px;
+    }
+    .reponsiveFlex {
+        justify-content: space-between;
+    }
+}
+
+/* Tablet */
+
+@media (min-width:740px) and (max-width:1023px) {
+    .reponsiveMargin0 {
+        margin-top: 0!important;
+    }
+    .wide {
+        width: 96%;
+    }
+    .sliders {
+        height: 580px;
+    }
+    /*.sliders .sliderText, */
+    .sliders h1 {
+        display: none;
+    }
+    /* .sliderBuy a {
+        position: relative;
+        left: -150px;
+        top: 180px;
+    } */
+    .ortherTour {
+        display: none;
+    }
+    .bgSaleMinuteText {
+        width: 100%;
+        height: 520px;
+    }
+    .priceDetails .reponsiveMargin-1, .priceDetails .reponsiveMargin-2 {
+        margin: 20px 0 0 !important;
+    }
+}
+
+/* Mobile*/
+
+@media (max-width:739px) {
+    .ortherTour {
+        display: none;
+    }
+    .header__bars-btn {
+        margin-right: 12px;
+        font-size: 2.4rem;
+    }
+    .sliders .sliderText, .sliders h1 {
+        display: none;
+    }
+    .sliders {
+        height: 375px;
+    }
+    .sliders .sliderBuy a {
+        padding: 12px 24px;
+        font-size: 1.4rem;
+    }
+    .sliders .sliderBuy a::after {
+        --height--: 44px;
+        width: 44px;
+    }
+    .sliders .sliderBuy {
+        left: -20px;
+    }
+    .header-img__size {
+        width: 120px;
+        height: 30px;
+    }
+    .header {
+        --height--: 56px;
+    }
+    .optionContent-Title h3{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .contentCustomerService-List h2{
+        font-size: 3rem;
+    }
+    .bgSaleMinuteText{
+        width: 100%;
+        height: 500px;
+    }
+    .reponsiveMargin-1,.reponsiveMargin-2{
+        margin-left: 0 !important;
+        margin-top: 20px;
+    }
+    .news .bgImgBlog{
+        padding-top: 100%;
+    }
+    .reponsivePadding20{
+        padding:0 20px;
+    }
+    .footer{
+        padding: 40px 20px;
+    }
+    .footer .boardFooter{
+        padding: 20px 30px;
+    }
+    .footer .flex-space-between{
+        flex-direction: column;
+        height:inherit;
+    }
+    .footer .flex-space-between .descirption-1{
+        display: block;
+    }
+    .footer .flex-space-between .descirption-1:first-child{
+        margin-bottom: 1.4rem;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

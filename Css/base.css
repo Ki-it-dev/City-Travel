@@ -1,0 +1,92 @@
+:root{
+    --btn-menu-- : rgb(243, 164, 107);
+    --new-label : #1bbc9b;
+    --hot-label-- : #f76570;
+    --best-label-- :#14b9d5;
+}
+
+.padding-70{
+    padding: 70px !important;
+}
+
+/* btn menu */
+.btnActive{
+    width: 140px;
+    height: 32px;
+    border: none;
+    border-radius: 16px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: var(--btn-menu--);
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+/* label */
+li.hotLabel > a::after{
+    content: 'HOT';
+    background: var(--hot-label--);
+}
+.newLabel > a::after{
+    content: 'NEW';
+    background: var(--new-label);
+}
+.bestLabel > a::after{
+    content: 'BEST';
+    background: var(--best-label--);
+}
+li.hotLabel > a::after,
+.newLabel > a::after,
+.bestLabel > a::after{
+    display: block;
+    color: #fff;
+    font-size: 1rem;
+    padding: 4px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.arrowLabel > a::after{
+    content:'';
+    display:block;
+    border-style: solid;
+    border-width:5px 0 5px 5px;
+    border-color: transparent transparent transparent #555555;
+}
+
+.optionContent-Title u ,
+.contentCustomerService-List h2 u,
+.titleSeason u,
+.news .title-content u{
+    position: relative;
+    text-decoration: none;
+    z-index: 2;
+}
+
+.optionContent-Title u::after ,
+.contentCustomerService-List h2 u::after,
+.titleSeason u::after,
+.news .title-content u::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 6px;
+    right: 0;
+    width: 100%;
+    height: 5px;
+    z-index: -1;
+}
+
+.optionContent-Title u::after ,
+.contentCustomerService-List h2 u::after{
+    background: #f3a46b;
+}
+
+.titleSeason u::after{
+    background-color: rgba(0,0,0,0.1);
+    bottom: 4px;
+}
+
+.news .title-content u::after{
+    background: #1bbc9b;
+}

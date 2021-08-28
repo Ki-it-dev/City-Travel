@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Tour</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="Font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./Css/grid.css">
+    <link rel="stylesheet" href="./Css/base.css">
+    <link rel="stylesheet" href="./Css/main.css">
+    <link rel="stylesheet" href="./Css/reponsive.css">
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="grid wide">
+            <div class="header-flex">
+                <div class="header-img">
+                    <a class="header-img__link" href="#">
+                        <img class="header-img__size" src="Img/logo-color-1.png" alt="">
+                    </a>
+                </div>
+                <div class="header-menu">
+                    <ul class="header-menu__list">
+                        <li class="header-menu__list-items">
+                            <a href=""><span>Home</span></a>
+                        </li>
+                        <li class="header-menu__list-items">
+                            <a href=""><span>Packages</span></a>
+                            <ul class="header-submenuList">
+                                <li class="header-submenuItems hotLabel">
+                                    <a href="" class="header-submenuItems-link">
+                                        Search 1
+                                    </a>
+                                </li>
+                                <li class="header-submenuItems">
+                                    <a href="" class="header-submenuItems-link">
+                                        Search 2
+                                    </a>
+                                </li>
+                                <li class="header-submenuItems arrowLabel">
+                                    <a href="" class="header-submenuItems-link">
+                                        Tour Package
+                                    </a>
+                                    <ul class="submenuChild-list">
+                                        <li class="submenuChild-items bestLabel">
+                                            <a href="" class="submenuChild-link">
+                                                Carousel
+                                            </a>
+                                        </li>
+                                        <li class="submenuChild-items">
+                                            <a href="" class="submenuChild-link">
+                                                Custom Map
+                                            </a>
+                                        </li>
+                                        <li class="submenuChild-items">
+                                            <a href="" class="submenuChild-link">
+                                                360° Panorama
+                                            </a>
+                                        </li>
+                                        <li class="submenuChild-items">
+                                            <a href="" class="submenuChild-link">
+                                                Default
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header-submenuItems">
+                                    <a href="" class="header-submenuItems-link">
+                                        Destination
+                                    </a>
+                                </li>
+                                <li class="header-submenuItems">
+                                    <a href="" class="header-submenuItems-link">
+                                        Typology
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-menu__list-items">
+                            <a href=""><span>Shop</span></a>
+                            <ul class="header-submenuList">
+                                <li class="header-submenuItems">
+                                    <a href="" class="header-submenuItems-link">
+                                        Archive
+                                    </a>
+                                </li>
+                                <li class="header-submenuItems">
+                                    <a href="" class="header-submenuItems-link">
+                                        Single Product
+                                    </a>
+                                </li>
+                                <li class="header-submenuItems">
+                                    <a href="" class="header-submenuItems-link">
+                                        Cart
+                                    </a>
+                                </li>
+                                <li class="header-submenuItems">
+                                    <a href="" class="header-submenuItems-link">
+                                        Chekout
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-menu__list-items">
+                            <a href=""><span>about us</span></a>
+                            <ul class="header-submenuList">
+                                <li class="header-submenuItems newLabel">
+                                    <a href="" class="header-submenuItems-link">
+                                        About us 1
+                                    </a>
+                                </li>
+                                <li class="header-submenuItems">
+                                    <a href="" class="header-submenuItems-link">
+                                        About us 2
+                                    </a>
+                                </li>
+                                <li class="header-submenuItems">
+                                    <a href="" class="header-submenuItems-link">
+                                        About us 3
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-menu__list-items">
+                            <a href=""><span>pages</span></a>
+                            <ul class="header-submenuList">
+                                <li class="header-submenuItems">
+                                    <a href="" class="header-submenuItems-link">
+                                        Services
+                                    </a>
+                                </li>
+                                <li class="header-submenuItems">
+                                    <a href="" class="header-submenuItems-link">
+                                        Agency Tours
+                                    </a>
+                                </li>
+                                <li class="header-submenuItems">
+                                    <a href="" class="header-submenuItems-link">
+                                        Prices
+                                    </a>
+                                </li>
+                                <li class="header-submenuItems">
+                                    <a href="" class="header-submenuItems-link">
+                                        Promotions
+                                    </a>
+                                </li>
+                                <li class="header-submenuItems">
+                                    <a href="" class="header-submenuItems-link">
+                                        Faq
+                                    </a>
+                                </li>
+                                <li class="header-submenuItems">
+                                    <a href="" class="header-submenuItems-link">
+                                        Coming Soon
+                                    </a>
+                                </li>
+                                <li class="header-submenuItems arrowLabel">
+                                    <a href="" class="header-submenuItems-link">
+                                        About us
+                                    </a>
+                                    <ul class="submenuChild-list">
+                                        <li class="submenuChild-items">
+                                            <a href="" class="submenuChild-link">
+                                                About us 1
+                                            </a>
+                                        </li>
+                                        <li class="submenuChild-items">
+                                            <a href="" class="submenuChild-link">
+                                                About us 2
+                                            </a>
+                                        </li>
+                                        <li class="submenuChild-items">
+                                            <a href="" class="submenuChild-link">
+                                                About us 3
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header-submenuItems arrowLabel">
+                                    <a href="" class="header-submenuItems-link">
+                                        Contact
+                                    </a>
+                                    <ul class="submenuChild-list">
+                                        <li class="submenuChild-items">
+                                            <a href="" class="submenuChild-link">
+                                                Contact 1
+                                            </a>
+                                        </li>
+                                        <li class="submenuChild-items">
+                                            <a href="" class="submenuChild-link">
+                                                Contact 2
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-menu__list-items">
+                            <a href=""><span>news</span></a>
+                            <ul class="header-submenuList">
+                                <li class="header-submenuItems">
+                                    <a href="" class="header-submenuItems-link">
+                                        Archive
+                                    </a>
+                                </li>
+                                <li class="header-submenuItems arrowLabel">
+                                    <a href="" class="header-submenuItems-link">
+                                        Single Post
+                                    </a>
+                                    <ul class="submenuChild-list">
+                                        <li class="submenuChild-items">
+                                            <a href="" class="submenuChild-link">
+                                                Full Width
+                                            </a>
+                                        </li>
+                                        <li class="submenuChild-items">
+                                            <a href="" class="submenuChild-link">
+                                                Right Sidebar
+                                            </a>
+                                        </li>
+                                        <li class="submenuChild-items">
+                                            <a href="" class="submenuChild-link">
+                                                Left Sidebar
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-menu__list-items">
+                            <a href=""><span>contact</span></a>
+                            <ul class="header-submenuList">
+                                <li class="header-submenuItems">
+                                    <a href="" class="header-submenuItems-link">
+                                        Contact 1
+                                    </a>
+                                </li>
+                                <li class="header-submenuItems">
+                                    <a href="" class="header-submenuItems-link">
+                                        Contact 2
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-menu__list-items">
+                            <button class="btnActive">book now</button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Mobile -->
+                <input type="checkbox" hidden name="" class="nav-input" id="nav-mobile-input">
+                <label for="nav-mobile-input" class="header__overlay"></label>
+                <label for="nav-mobile-input" class="header__bars-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <div class="header-menu-mobile">
+                    <label for="nav-mobile-input" class="header-close-mobile">
+                        <i class="fas fa-times"></i>
+                    </label>
+                    <ul class="header-menu__list-mobile">
+                        <li class="header-menu__list-items-mobile">
+                            <a href="" class="header-menu__list-items-link">
+                                <span><i class="fa-mobile-icons fas fa-home"></i>Home</span>
+                            </a>
+                        </li>
+                        <li class="header-menu__list-items-mobile">
+                            <a href="" class="header-menu__list-items-link">
+                                <span><i class="fa-mobile-icons fas fa-box-open"></i>Packages</span>
+                            </a>
+                        </li>
+                        <li class="header-menu__list-items-mobile">
+                            <a href="" class="header-menu__list-items-link">
+                                <span><i class="fa-mobile-icons fab fa-shopify"></i>Shop</span>
+                            </a>
+                        </li>
+                        <li class="header-menu__list-items-mobile">
+                            <a href="" class="header-menu__list-items-link">
+                                <span><i class="fa-mobile-icons far fa-address-card"></i>About us</span>
+                            </a>
+                        </li>
+                        <li class="header-menu__list-items-mobile">
+                            <a href="" class="header-menu__list-items-link">
+                                <span><i class="fa-mobile-icons fas fa-pager"></i>Pages</span>
+                            </a>
+                        </li>
+                        <li class="header-menu__list-items-mobile">
+                            <a href="" class="header-menu__list-items-link">
+                                <span><i class="fa-mobile-icons far fa-newspaper"></i>News</span>
+                            </a>
+                        </li>
+                        <li class="header-menu__list-items-mobile">
+                            <a href="" class="header-menu__list-items-link">
+                                <span><i class="fa-mobile-icons fas fa-phone-volume"></i>Contact</span>
+                            </a>
+                        </li>
+                        <li class="header-menu__list-items-mobile">
+                            <a href="" class="header-menu__list-items-link">
+                                <button class="btnBookNow">
+                                    book now
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="sliders">
+        <div class="slider">
+            <div class="slide active" style="background-image: url('Img/slide-01.jpg');">
+                <div class="container">
+                    <div class="caption">
+                        <h1>Enjoy <b>Your</b> Holiday</h1>
+                        <h1 class="captionMargin">With Our <b>Agency</b></h1>
+                        <div class="sliderText">
+                            <div class="sliderText-flex">
+                                <i class="fas fa-star iconSlideStars"></i>
+                                <span>
+                                    SPECTACULAR THINGS TO DO
+                                    <br>BEST PLACES TO SEE
+                                </span>
+                            </div>
+                            <div class="sliderText-flex">
+                                <i class="fas fa-star iconSlideStars"></i>
+                                <span>
+                                    LOCALS GUIDE AVAILABLE
+                                </span>
+                            </div>
+                            <div class="sliderText-flex">
+                                <i class="fas fa-star iconSlideStars"></i>
+                                <span>
+                                    ALL INCLUDSIVE FAMILY HOLIDAY
+                                    <br>FOR ALL SEASON
+                                </span>
+                            </div>
+                        </div>
+                        <div class="sliderBuy">
+                            <a href="">BUY A LICENCE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('Img/slide-02.jpg');">
+                <div class="container">
+                    <div class="caption">
+                        <h1>Enjoy <b>Your</b> Holiday</h1>
+                        <h1 class="captionMargin">With Our <b>Agency</b></h1>
+                        <div class="sliderText">
+                            <div class="sliderText-flex">
+                                <i class="fas fa-star iconSlideStars"></i>
+                                <span>
+                                    SPECTACULAR THINGS TO DO
+                                    <br>BEST PLACES TO SEE
+                                </span>
+                            </div>
+                            <div class="sliderText-flex">
+                                <i class="fas fa-star iconSlideStars"></i>
+                                <span>
+                                    LOCALS GUIDE AVAILABLE
+                                </span>
+                            </div>
+                            <div class="sliderText-flex">
+                                <i class="fas fa-star iconSlideStars"></i>
+                                <span>
+                                    ALL INCLUDSIVE FAMILY HOLIDAY
+                                    <br>FOR ALL SEASON
+                                </span>
+                            </div>
+                            <div class="sliderBuy">
+                                <a href="">BUY THE LICENSE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- controls  -->
+            <div class="controls">
+                <div class="prev">
+                    <i class="ti-angle-left leftSlide"></i>
+                </div>
+                <div class="next">
+                    <i class="ti-angle-right rightSlide"></i>
+                </div>
+            </div>
+
+            <!-- indicators -->
+            <div class="indicator">
+            </div>
+
+    </section>
+
+    <div class="grid wide reponsiveMargin0" style="margin-top:60px">
+        <div class="row">
+            <div class="col l-8 m-12 c-12 padding-70">
+                <div>
+                    <div class="optionContent">
+                        <p>walk tour and sugway</p>
+                    </div>
+                    <div class="optionContent-Title">
+                        <h3>the paris <u>experience</u> !</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col l-6">
+                            <p class="textContent">Lorem ipsum dolor sit amet, consect etur adip iscing elit. Proin
+                                rhoncus urn a dictum neque molestie ultricies.</p>
+                        </div>
+                        <div class="col l-6">
+                            <p class="textContent">Lorem ipsum dolor sit amet, consect etur adip iscing elit. Proin
+                                rhoncus urn a dictum neque molestie ultricies.</p>
+                        </div>
+                    </div>
+                    <div class="optionContent-BtnViewAll">
+                        <a href="">
+                            view all packages
+                        </a>
+                    </div>
+                </div>
+                <div style="position: relative;"></div>
+                <div class="ortherTour">
+                    <div class="ortherTour-packages ortherTour-packages-1">
+                        <a href="">
+                            <img src="Img/package-01-150x150.jpg" alt="" class="ortherTourSize-img">
+                        </a>
+                    </div>
+                    <div class="ortherTour-packages ortherTour-packages-2">
+                        <a href="">
+                            <img src="Img/package-02-150x150.jpg" alt="" class="ortherTourSize-img">
+                        </a>
+                    </div>
+                    <div class="ortherTour-packages ortherTour-packages-3">
+                        <a href="">
+                            <img src="Img/package-03-150x150.jpg" alt="" class="ortherTourSize-img">
+                        </a>
+                    </div>
+                    <div class="ortherTour-packages ortherTour-packages-4">
+                        <a href="">
+                            <img src="Img/package-04-150x150.jpg" alt="" class="ortherTourSize-img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l-4 m-12 c-12 imgTourMain" style="background-image:url('Img/para-07.jpg')">
+                <div class="iconPlay">
+                    <i class="ti-control-play"></i>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top:60px"></div>
+    </div>
+
+    <div class="contentCustomerService-List">
+        <h4>MULTIPLE BENEFITS INCLUDED</h4>
+        <h2>OUR <u>SERVICES</u></h2>
+        <div class="row" style="margin-top:48px;">
+            <div class="col l-4">
+                <div class="row rowMargin">
+                    <div class="col l-2">
+                        <img src="Img/ico-02.png" alt="" class="imgIcon">
+                    </div>
+                    <div class="col l-10">
+                        <h3>Insurance</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.
+                        </p>
+                        <a href="" class="btnLinks btnLinks-1">view more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l-4">
+                <div class="row rowMargin">
+                    <div class="col l-2">
+                        <img src="Img/ico-06.png" alt="" class="imgIcon">
+                    </div>
+                    <div class="col l-10">
+                        <h3>Medical Care</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.
+                        </p>
+                        <a href="" class="btnLinks btnLinks-2">view more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l-4">
+                <div class="row rowMargin">
+                    <div class="col l-2">
+                        <img src="Img/ico-01.png" alt="" class="imgIcon">
+                    </div>
+                    <div class="col l-10">
+                        <h3>Meals Included</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.
+                        </p>
+                        <a href="" class="btnLinks btnLinks-3">view more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l-4">
+                <div class="row rowMargin">
+                    <div class="col l-2">
+                        <img src="Img/ico-03.png" alt="" class="imgIcon">
+                    </div>
+                    <div class="col l-10">
+                        <h3>Accessibility</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.
+                        </p>
+                        <a href="" class="btnLinks btnLinks-4">view more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l-4">
+                <div class="row rowMargin">
+                    <div class="col l-2">
+                        <img src="Img/ico-05.png" alt="" class="imgIcon">
+                    </div>
+                    <div class="col l-10">
+                        <h3>Customer Care</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.
+                        </p>
+                        <a href="" class="btnLinks btnLinks-5">view more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l-4">
+                <div class="row rowMargin">
+                    <div class="col l-2">
+                        <img src="Img/ico-04.png" alt="" class="imgIcon">
+                    </div>
+                    <div class="col l-10">
+                        <h3>Shuttle Included</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.
+                        </p>
+                        <a href="" class="btnLinks btnLinks-6">view more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="priceDetails" style="margin-top:60px;">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-4 m-12 c-12">
+                    <div class="bgSaleMinuteText">
+                        <div class="titleTimeSale">
+                            <h3>last minute !</h3>
+                        </div>
+                        <div class="titleSeason">
+                            <h1>Summer <u>SALE</u></h1>
+                        </div>
+                        <div class="row" style="margin: 48px 0 0;">
+                            <div class="col l-6 m-6 c-6">
+                                <div class="text">
+                                    <div class="textNumbers">
+                                        000
+                                    </div>
+                                    <div class="textText">
+                                        days
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-6 m-6 c-6">
+                                <div class="text">
+                                    <div class="textNumbers">
+                                        00
+                                    </div>
+                                    <div class="textText">
+                                        hours
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-6 m-6 c-6">
+                                <div class="text">
+                                    <div class="textNumbers">
+                                        00
+                                    </div>
+                                    <div class="textText">
+                                        minutes
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-6 m-6 c-6">
+                                <div class="text">
+                                    <div class="textNumbers">
+                                        00
+                                    </div>
+                                    <div class="textText">
+                                        seconds
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <a href="" class="btnCheck">
+                                check now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-8 m-12 c-12">
+                    <div class="row reponsivePadding20">
+                        <div class="l-6 m-12 c-12 borderColor reponsiveMargin-1">
+                            <div class="travel">
+                                <div class="travel-img">
+                                    <img class="imgTravel" src="Img/package-01-1024x640.jpg" alt="">
+                                    <div class="iconTravel">
+                                        <a href="">
+                                            <img src="Img/arch.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col" style="padding: 30px;">
+                                    <div class="travel-name">
+                                        <a href="">
+                                            <h3>Berlin</h3>
+                                        </a>
+                                        <div class="travel-area">
+                                            <a href="">
+                                                <img src="Img/icon-pin-grey.png" alt="">
+                                                <span>Europe</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="travel-price">
+                                        <div class="travel-price__text">
+                                            <a href="">
+                                                <span>CULTURAL</span>
+                                                <div class="travel-price__sum">
+                                                    <span>RELAX</span>
+                                                    <span class="price">+ 1</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="travel-price__price">
+                                            <a href="">
+                                                <span>700 $</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="travel-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur
+                                            ante.
+                                            Donec dapibus dictum scelerisque.</p>
+                                    </div>
+                                    <div class="travel-btn">
+                                        <a href="">
+                                            DETAILS
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-6 m-12 c-12 borderColor reponsiveMargin-2">
+                            <div class="travel">
+                                <div class="travel-img">
+                                    <img class="imgTravel" src="Img/package-02-1024x640.jpg" alt="">
+                                    <div class="iconTravel iconTravel-pink">
+                                        <a href="">
+                                            <img src="Img/torii-gate.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col" style="padding: 30px;">
+                                    <div class="travel-name">
+                                        <a href="">
+                                            <h3>Hong Kong</h3>
+                                        </a>
+                                        <div class="travel-area">
+                                            <a href="">
+                                                <img src="Img/icon-pin-grey.png" alt="">
+                                                <span>Asia</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="travel-price">
+                                        <div class="travel-price__text">
+                                            <a href="">
+                                                <span>HISTORY</span>
+                                                <div class="travel-price__sum">
+                                                    <span>CULTURAl</span>
+                                                    <span class="price bgpink">+ 1</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="travel-price__price">
+                                            <a href="">
+                                                <span class="oldPrice">1000</span>
+                                            </a>
+                                            <a href="">
+                                                <span>500 $</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="travel-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur
+                                            ante.
+                                            Donec dapibus dictum scelerisque.</p>
+                                    </div>
+                                    <div class="travel-btn bgpink">
+                                        <a href="">
+                                            DETAILS
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news" style="margin-top: 60px;">
+                <div class="title">
+                    <h3>from the blog</h3>
+                </div>
+                <div class="title-content">
+                    <h2>Articles & <u>news</u></h2>
+                </div>
+                <div class="row">
+                    <div class="col l-6 m-12 c-12">
+                        <div class="row pad-content">
+                            <div class="col l-6 m-6 c-12 bgImgBlog"
+                                style="padding-right:0;background-image: url('Img/blog-01.jpg');">
+                            </div>
+                            <div class="col l-6 m-6 c-12 borderColor-2">
+                                <span class="text">our news</span>
+                                <h3>Travel Events</h3>
+                                <span class="text text-2">
+                                    Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et.
+                                    Quisque euismod orci ut et lobortis.
+                                </span>
+                                <a href="" class="btnReadMore">
+                                    read more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 c-12">
+                        <div class="row pad-content">
+                            <div class="col l-6 m-6 c-12 bgImgBlog"
+                                style="padding-right:0;background-image: url('Img/blog-04.jpg');">
+                            </div>
+                            <div class="col l-6 m-6 c-12 borderColor-2 bgColor-green">
+                                <span class="text">TRAVEL TIPS</span>
+                                <h3>New Routes</h3>
+                                <span class="text text-2">
+                                    Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et.
+                                    Quisque euismod orci ut et lobortis.
+                                </span>
+                                <a href="" class="btnReadMore">
+                                    read more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 c-12">
+                        <div class="row pad-content">
+                            <div class="col l-6 l-6 m-6 c-12 borderColor-2 bgColor-blue">
+                                <span class="text">our news</span>
+                                <h3>Best Beaches</h3>
+                                <span class="text text-2">
+                                    Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et.
+                                    Quisque euismod orci ut et lobortis.
+                                </span>
+                                <a href="" class="btnReadMore">
+                                    read more
+                                </a>
+                            </div>
+                            <div class="col l-6 l-6 m-6 c-12 bgImgBlog"
+                                style="padding-right:0;background-image: url('Img/blog-03.jpg');">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 c-12">
+                        <div class="row pad-content">
+                            <div class="col l-6 l-6 m-6 c-12 borderColor-2">
+                                <span class="text">TRAVEL TIPS</span>
+                                <h3>Love Travel</h3>
+                                <span class="text text-2">
+                                    Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et.
+                                    Quisque euismod orci ut et lobortis.
+                                </span>
+                                <a href="" class="btnReadMore bgColor-red">
+                                    read more
+                                </a>
+                            </div>
+                            <div class="col l-6 l-6 m-6 c-12 bgImgBlog"
+                                style="padding-right:0;background-image: url('Img/blog-02.jpg');">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer" style="margin-top:30px;" class="footer">
+        <div class="boardFooter">
+            <div class="grid">
+                <div class="row">
+                    <div class="col l-6">
+                        <img src="Img/logo-color-1.png" alt="" class="imgIcon">
+                        <span class="textDescription">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Curabitur ut diam et nibh <u>condimentum</u> venenatis eu ac magnasin.
+                            Quisque interdum est mauris, eget ullamcorper.
+                        </span>
+                        <div class="listSocialNetworks">
+                            <img src="Img/twitter.png" alt="" class="iconSize">
+                            <img src="Img/youtube.png" alt="" class="iconSize">
+                            <img src="Img/facebook.png" alt="" class="iconSize">
+                            <img src="Img/vimeo.png" alt="" class="iconSize">
+                        </div>
+                    </div>
+                    <div class="col l-6 reponsiveFooter">
+                        <div class="row reponsiveFlex">
+                            <div class="col l-4 m-12 c-12">
+                                <h3>OUR AGENCY</h3>
+                                <div class="listsContent">
+                                    <div class="itemContent">
+                                        <img src="Img/right-arrow.png" alt="" class="imgSizeArrow">
+                                        <span>Services</span>
+                                    </div>
+                                    <div class="itemContent">
+                                        <img src="Img/right-arrow.png" alt="" class="imgSizeArrow">
+                                        <span>Insurance</span>
+                                    </div>
+                                    <div class="itemContent">
+                                        <img src="Img/right-arrow.png" alt="" class="imgSizeArrow">
+                                        <span>Agency</span>
+                                    </div>
+                                    <div class="itemContent">
+                                        <img src="Img/right-arrow.png" alt="" class="imgSizeArrow">
+                                        <span>Tourism</span>
+                                    </div>
+                                    <div class="itemContent">
+                                        <img src="Img/right-arrow.png" alt="" class="imgSizeArrow">
+                                        <span>Payment</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-12 c-12">
+                                <h3>PARTNERS</h3>
+                                <div class="listsContent">
+                                    <div class="itemContent">
+                                        <img src="Img/right-arrow.png" alt="" class="imgSizeArrow">
+                                        <span>Booking</span>
+                                    </div>
+                                    <div class="itemContent">
+                                        <img src="Img/right-arrow.png" alt="" class="imgSizeArrow">
+                                        <span>RentalCar</span>
+                                    </div>
+                                    <div class="itemContent">
+                                        <img src="Img/right-arrow.png" alt="" class="imgSizeArrow">
+                                        <span>HostelWorld</span>
+                                    </div>
+                                    <div class="itemContent">
+                                        <img src="Img/right-arrow.png" alt="" class="imgSizeArrow">
+                                        <span>Trivago</span>
+                                    </div>
+                                    <div class="itemContent">
+                                        <img src="Img/right-arrow.png" alt="" class="imgSizeArrow">
+                                        <span>TripAdvisor</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-12 c-12">
+                                <h3>LAST MINUTE</h3>
+                                <div class="listsContent">
+                                    <div class="itemContent">
+                                        <img src="Img/right-arrow.png" alt="" class="imgSizeArrow">
+                                        <span>London</span>
+                                    </div>
+                                    <div class="itemContent">
+                                        <img src="Img/right-arrow.png" alt="" class="imgSizeArrow">
+                                        <span>California</span>
+                                    </div>
+                                    <div class="itemContent">
+                                        <img src="Img/right-arrow.png" alt="" class="imgSizeArrow">
+                                        <span>Indonesia</span>
+                                    </div>
+                                    <div class="itemContent">
+                                        <img src="Img/right-arrow.png" alt="" class="imgSizeArrow">
+                                        <span>Europe</span>
+                                    </div>
+                                    <div class="itemContent">
+                                        <img src="Img/right-arrow.png" alt="" class="imgSizeArrow">
+                                        <span>Oceania</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-space-between">
+            <span class="descirption-1">
+                THE BEST WORDPRESS TRAVEL THEME
+            </span>
+            <span class="descirption-1">
+                COPYRIGHT KHOALE THEMES 2021
+            </span>
+        </div>
+    </footer>
+    <script src="Js/app.js"></script>
+</body>
+
+</html>
