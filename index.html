@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>City Tour</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="Font/themify-icons/themify-icons.css">
@@ -269,34 +270,182 @@
                             </a>
                         </li>
                         <li class="header-menu__list-items-mobile">
-                            <a href="" class="header-menu__list-items-link">
+                            <p class="header-menu__list-items-link packages-btn">
                                 <span><i class="fa-mobile-icons fas fa-box-open"></i>Packages</span>
-                            </a>
+                                <i class="ti-angle-down iconsMobileDown"></i>
+                            </p>
+                            <ul class="subMobile">
+                                <li class="subMobile__items">
+                                    <a href="" class="subMobile__link">Search 1</a>
+                                </li>
+                                <li class="subMobile__items">
+                                    <a href="" class="subMobile__link">Search 2</a>
+                                </li>
+                                <li class="subMobile__items">
+                                    <p class="subMobile__link tour-btn">Tour Package
+                                        <i class="ti-angle-down iconsMobileDown-2"></i>
+                                    </p>
+                                    <ul class="subMobile__listChild">
+                                        <li class="subMobile__listChild-items">
+                                            <a href="" class="subMobile__listChild-links">Carousel</a>
+                                        </li>
+                                        <li class="subMobile__listChild-items">
+                                            <a href="" class="subMobile__listChild-links">Custom map</a>
+                                        </li>
+                                        <li class="subMobile__listChild-items">
+                                            <a href="" class="subMobile__listChild-links">360° Panorama</a>
+                                        </li>
+                                        <li class="subMobile__listChild-items">
+                                            <a href="" class="subMobile__listChild-links">Default</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="subMobile__items">
+                                    <a href="" class="subMobile__link">Destination</a>
+                                </li>
+                                <li class="subMobile__items">
+                                    <a href="" class="subMobile__link">Typology</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="header-menu__list-items-mobile">
-                            <a href="" class="header-menu__list-items-link">
+                            <p class="header-menu__list-items-link shop-btn">
                                 <span><i class="fa-mobile-icons fab fa-shopify"></i>Shop</span>
-                            </a>
+                                <i class="ti-angle-down iconsMobileDown-1-2"></i>
+                            </p>
+                            <ul class="subMobile-1">
+                                <li class="subMobile__items">
+                                    <a href="" class="subMobile__link">Archive</a>
+                                </li>
+                                <li class="subMobile__items">
+                                    <a href="" class="subMobile__link">Single product</a>
+                                </li>
+                                <li class="subMobile__items">
+                                    <a href="" class="subMobile__link">Cart</a>
+                                </li>
+                                <li class="subMobile__items">
+                                    <a href="" class="subMobile__link">Check out</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="header-menu__list-items-mobile">
-                            <a href="" class="header-menu__list-items-link">
+                            <p class="header-menu__list-items-link aboutus-btn">
                                 <span><i class="fa-mobile-icons far fa-address-card"></i>About us</span>
-                            </a>
+                                <i class="ti-angle-down iconsMobileDown-1-3"></i>
+                            </p>
+                            <ul class="subMobile-2">
+                                <li class="subMobile__items">
+                                    <a href="" class="subMobile__link">About us 1</a>
+                                </li>
+                                <li class="subMobile__items">
+                                    <a href="" class="subMobile__link">About us 2</a>
+                                </li>
+                                <li class="subMobile__items">
+                                    <a href="" class="subMobile__link">About us 3</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="header-menu__list-items-mobile">
-                            <a href="" class="header-menu__list-items-link">
+                            <p class="header-menu__list-items-link pages-btn">
                                 <span><i class="fa-mobile-icons fas fa-pager"></i>Pages</span>
-                            </a>
+                                <i class="ti-angle-down iconsMobileDown-1-4"></i>
+                            </p>
+                            <ul class="subMobile-3">
+                                <li class="subMobile__items">
+                                    <a href="" class="subMobile__link">Services</a>
+                                </li>
+                                <li class="subMobile__items">
+                                    <a href="" class="subMobile__link">Agency tours</a>
+                                </li>
+                                <li class="subMobile__items">
+                                    <a href="" class="subMobile__link">Testimonials</a>
+                                </li>
+                                <li class="subMobile__items">
+                                    <a href="" class="subMobile__link">Prices</a>
+                                </li>
+                                <li class="subMobile__items">
+                                    <a href="" class="subMobile__link">Promotions</a>
+                                </li>
+                                <li class="subMobile__items">
+                                    <a href="" class="subMobile__link">Faq</a>
+                                </li>
+                                <li class="subMobile__items">
+                                    <a href="" class="subMobile__link">Coming soon</a>
+                                </li>
+                                <li class="subMobile__items">
+                                    <p href="" class="subMobile__link aboutus2-btn">About us
+                                        <i class="ti-angle-down iconsMobileDown-2-1"></i>
+                                    </p>
+                                    <ul class="subMobile__listChild-1">
+                                        <li class="subMobile__listChild-items">
+                                            <a href="" class="subMobile__listChild-links">About us 1</a>
+                                        </li>
+                                        <li class="subMobile__listChild-items">
+                                            <a href="" class="subMobile__listChild-links">About us 2</a>
+                                        </li>
+                                        <li class="subMobile__listChild-items">
+                                            <a href="" class="subMobile__listChild-links">About us 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="subMobile__items">
+                                    <p class="subMobile__link contact-btn">Contact
+                                        <i class="ti-angle-down iconsMobileDown-2-2"></i>
+                                    </p>
+                                    <ul class="subMobile__listChild-2">
+                                        <li class="subMobile__listChild-items">
+                                            <a href="" class="subMobile__listChild-links">Contact 1</a>
+                                        </li>
+                                        <li class="subMobile__listChild-items">
+                                            <a href="" class="subMobile__listChild-links">Contact 2</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
                         <li class="header-menu__list-items-mobile">
-                            <a href="" class="header-menu__list-items-link">
+                            <p class="header-menu__list-items-link news-btn">
                                 <span><i class="fa-mobile-icons far fa-newspaper"></i>News</span>
-                            </a>
+                                <i class="ti-angle-down iconsMobileDown-1-5"></i>
+                            </p>
+                            <ul class="subMobile-4">
+                                <li class="subMobile__items">
+                                    <a href="" class="subMobile__link">Archive</a>
+                                </li>
+                                <li class="subMobile__items">
+                                    <p href="" class="subMobile__link post-btn">Single post
+                                        <i class="ti-angle-down iconsMobileDown-2-3"></i>
+                                    </p>
+                                    <ul class="subMobile__listChild-3">
+                                        <li class="subMobile__listChild-items">
+                                            <a href="" class="subMobile__listChild-links">Carousel</a>
+                                        </li>
+                                        <li class="subMobile__listChild-items">
+                                            <a href="" class="subMobile__listChild-links">Custom map</a>
+                                        </li>
+                                        <li class="subMobile__listChild-items">
+                                            <a href="" class="subMobile__listChild-links">360° Panorama</a>
+                                        </li>
+                                        <li class="subMobile__listChild-items">
+                                            <a href="" class="subMobile__listChild-links">Default</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
                         <li class="header-menu__list-items-mobile">
-                            <a href="" class="header-menu__list-items-link">
+                            <p class="header-menu__list-items-link contact2-btn">
                                 <span><i class="fa-mobile-icons fas fa-phone-volume"></i>Contact</span>
-                            </a>
+                                <i class="ti-angle-down iconsMobileDown-1-6"></i>
+                            </p>
+                            <ul class="subMobile-5">
+                                <li class="subMobile__items">
+                                    <a href="" class="subMobile__link">Contact 1</a>
+                                </li>
+                                <li class="subMobile__items">
+                                    <a href="" class="subMobile__link">Contact 2</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="header-menu__list-items-mobile">
                             <a href="" class="header-menu__list-items-link">
