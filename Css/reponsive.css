@@ -1,3 +1,7 @@
+.marginTop{
+    margin-top: 60px;
+}
+
 .header__bars-btn {
     position: relative;
     color: #000;
@@ -324,6 +328,40 @@
     }
     .footer .flex-space-between .descirption-1:first-child {
         margin-bottom: 1.4rem;
+    }
+}
+
+@media (max-width:280px){
+    .sliders .sliderBuy{
+        left: 32px;
+    }
+    .padding-70{
+        padding: 32px !important;
+    }
+    .contentCustomerService-List{
+        padding: 32px 20px;
+    }
+    .marginTop{
+        margin-top: 0;
+    }
+    .bgSaleMinuteText {
+        height:555px;
+    }
+    .travel-price__sum .price{
+        width: 44px;
+        margin-right: 8px;
+    }
+    .travel-price__price a{
+        font-size: 1.7rem;
+    }
+    .travel-price__price .oldPrice{
+        font-size: 2rem;
+    }
+    .travel-btn{
+        width: 88px;
+    }
+    .news .title-content h2{
+        font-size: 2.4rem;
     }
 }
 

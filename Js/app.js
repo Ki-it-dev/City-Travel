@@ -1,3 +1,4 @@
+// Menu mobile start
 $('.packages-btn').click(function(){
     $('.header-menu-mobile .subMobile').toggleClass('show')
     $('.header-menu__list-mobile .iconsMobileDown').toggleClass('rotate')
@@ -38,3 +39,59 @@ $('.post-btn').click(function(){
     $('.subMobile__listChild-3').toggleClass('show')
     $('.iconsMobileDown-2-3').toggleClass('rotate')
 })
+// Menu mobile end
+
+// Slider start
+
+const slider = document.querySelectorAll('.slide');
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+let index = 0;
+
+timer = setInterval(autoPlay,5000);
+
+function prevSlide(){
+    if(index == 0){
+        index = slider.length - 1;
+    }else{
+        index--;
+    }
+    changeSlide();
+}
+
+function nextSlide(){
+    if(index == slider.length - 1){
+        index = 0;
+    }else{
+        index++;
+    }
+    changeSlide();
+}
+
+function changeSlide(){
+    for(let i =0;i<slider.length;i++){
+        slider[i].classList.remove('active');
+    }
+    slider[index].classList.add('active');
+}
+
+function resetTimer(){
+    timer = setInterval(autoPlay,5000);
+    clearInterval(timer);
+}
+
+function autoPlay(){
+    // nextSlide();
+}
+
+prev.addEventListener('click',function(){
+    prevSlide();
+    resetTimer();
+})
+
+next.addEventListener('click',function(){
+    nextSlide();
+    resetTimer();
+})
+
+//Slider end
