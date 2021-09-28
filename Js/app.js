@@ -81,7 +81,7 @@ function resetTimer(){
 }
 
 function autoPlay(){
-    // nextSlide();
+    nextSlide();
 }
 
 prev.addEventListener('click',function(){
